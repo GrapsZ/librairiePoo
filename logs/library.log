@@ -1,0 +1,15 @@
+[Fri, 19 Apr 2019 12:33:38] Empty or Null cart in set_command.php 
+[Fri, 19 Apr 2019 12:34:13] no action or user_id GET in set_command.php
+[Fri, 19 Apr 2019 12:34:35] user_id isn't same Session id but 14
+[Fri, 19 Apr 2019 12:34:57] Bad action set paieme
+[Fri, 19 Apr 2019 13:06:46] user_id isn't same Session id but 15
+[Fri, 19 Apr 2019 13:07:27] user_id isn't same Session id but 14
+[Fri, 19 Apr 2019 13:07:33] Empty Cart
+[Fri, 19 Apr 2019 13:12:36] payment method not good but : paysafecard
+[Fri, 19 Apr 2019 13:15:40] payment method not good but : paypal
+[Fri, 19 Apr 2019 13:16:48] payment method not good but : paypal
+[Fri, 19 Apr 2019 13:17:08] payment method not good but : paypal
+[Fri, 19 Apr 2019 13:18:35] payment method not good but : paypal
+[Fri, 19 Apr 2019 13:22:17] payment method not good but : paypale
+[Wed, 24 Apr 2019 10:12:08] action isn't cart_valid cart_vali
+[Wed, 24 Apr 2019 10:12:34] Bad action set paiemen

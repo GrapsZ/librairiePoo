@@ -1,0 +1,19 @@
+Objets :
+ - https://phpdelusions.net/pdo/objects
+
+Dom en php :
+ - https://www.php.net/manual/fr/domdocument.loadhtml.php
+
+Cours js :
+ - https://frontendmasters.com/courses/object-oriented-js/
+ - https://frontendmasters.com/courses/javascript-new-hard-parts/
+ - https://frontendmasters.com/courses/javascript-hard-parts/
+
+TodoJs Vanilla :
+ - https://github.com/Flat-Pixels/TodoApp---VanillaJs/blob/master/domManipulation.js
+
+Css images responsives :
+ - https://www.grafikart.fr/tutoriels/images-responsive-1152
+
+Bootstrap Sizing :
+ - https://getbootstrap.com/docs/4.3/utilities/sizing/#relative-to-the-parent

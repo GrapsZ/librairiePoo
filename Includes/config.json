@@ -1,0 +1,19 @@
+{
+  "host": "localhost",
+  "db": "librairie",
+  "username": "root",
+  "password": "",
+  "domainName": "http://localhost/Librairie/",
+
+  "mailer_useSMTP": true,
+  "mailer_host": "SSL0.OVH.NET",
+  "mailer_smtp_auth": true,
+  "mailer_ishtml": true,
+  "mailer_name": "E-commerce Librairie",
+  "mailer_username": "michael.thaize@stagiairesifa.fr",
+  "mailer_password": "",
+  "mailer_smtp_secure": "tls",
+  "mailer_port": 587,
+
+  "debugMode": true
+}
