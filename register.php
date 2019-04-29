@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
     } elseif (empty($_POST['mail'])) {
         Kernel::getInstance()->addAlert("danger",
             "Veuillez saisir une adresse email.");
-    } elseif (empty($_POST['sexH']) && empty($_POST['sexF'])) {
+    } elseif (empty($_POST['sex'])) {
         Kernel::getInstance()->addAlert("danger",
             "Veuillez définir votre sexe.");
     } elseif (empty($_POST['password'])) {
@@ -31,14 +31,10 @@ if (isset($_POST['submit'])) {
             Kernel::getInstance()->addAlert("danger",
                 "Votre adresse email est invalide.");
         } else {
-            if ($_POST['sexF'] == "on") {
-                $sex = "f";
-            } elseif($_POST['sexM'] == "on") {
-                $sex = "m";
-            }
-            if (Users::registerNewUser(Kernel::getInstance()->clean($_POST['username']), Kernel::getInstance()->clean($sex), Kernel::getInstance()->clean($_POST['mail']), Kernel::getInstance()->clean($_POST['password']))) {
+            if (Users::registerNewUser(Kernel::getInstance()->clean($_POST['username']), Kernel::getInstance()->clean($_POST['sex']), Kernel::getInstance()->clean($_POST['mail']), Kernel::getInstance()->clean($_POST['password']))) {
                 Kernel::getInstance()->addAlert("success",
                     "Votre inscription est validée. Un email de confirmation vous a été envoyé.");
+                header("Refresh: 2;url=connect.php");
             } else {
                 Kernel::getInstance()->addAlert("danger",
                     "Inscription refusée. Nom d'utilisateur ou adresse email déjà utilisé.");
@@ -67,11 +63,11 @@ if (isset($_POST['submit'])) {
                             </div>
                             <div class="form-group">
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" id="homme" name="sexH" class="custom-control-input" checked="">
+                                    <input type="radio" value="m" id="homme" name="sex" class="custom-control-input" checked="">
                                     <label class="custom-control-label" for="homme">Homme</label>
                                 </div>
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" id="femme" name="sexF" class="custom-control-input">
+                                    <input type="radio" value="f" id="femme" name="sex" class="custom-control-input">
                                     <label class="custom-control-label" for="femme">Femme</label>
                                 </div>
                             </div>
